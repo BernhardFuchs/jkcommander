@@ -2,8 +2,8 @@ require('colors');
 const shell = require('shelljs');
 
 const initUpstreamRepository = () => {
-  const remoteRepositoryUrl = process.argv.slice(2);
-
+  const remoteRepositoryUrl = process.argv.slice(3);
+  
   if (!remoteRepositoryUrl) {
     console.log('No remoteRepositoryUrl provided!'.red);
     process.exit(0);
