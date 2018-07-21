@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "commander tool for cli-automation with node",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BernhardFuchs/jkcommander.git"
+  },
   "scripts": {
     "init": "node ./init.js"
   },
