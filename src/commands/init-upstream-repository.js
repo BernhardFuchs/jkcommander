@@ -15,7 +15,7 @@ const initUpstreamRepository = () => {
   shell.exec(`git commit -m "Init Upstream Repository script"`);
   shell.exec(`git remote add origin ${remoteRepositoryUrl}`);
   shell.exec(`git remote -v`);
-  shell.exec(`git push origin master`);
+  shell.exec(`git push --set-upstream origin master`);
 };
 
 module.exports = initUpstreamRepository;
