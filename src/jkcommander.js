@@ -8,6 +8,12 @@ jkcommander
   .description('initialize an upstream repository')
   .action(initUpstreamRepository);
 
+const createBranchRemote = require('./commands/create-branch-remote');
+jkcommander
+  .command('createBranchRemote')
+  .description('create and push branch')
+  .action(createBranchRemote);
+
 const dummyScript = require('./commands/dummy-script');
 jkcommander
   .command('dummyScript')
