@@ -13,7 +13,7 @@ const createBranchRemote = () => {
 
   shell.exec(`git pull`);
   shell.exec(`git checkout -b ${branchName}`);
-  shell.exec(`git push origin ${branchName}`);
+  shell.exec(`git push --set-upstream origin ${branchName}`);
 }
 
 module.exports = createBranchRemote;
