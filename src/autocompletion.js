@@ -1,7 +1,8 @@
 const aliases = [
   'initRepo',
   'createBranchRemote',
-  'dummyScript'
+  'dummyScript',
+  'sshAdd'
 ]
 
 const setup = () => {
