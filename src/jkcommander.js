@@ -17,6 +17,12 @@ jkcommander
   .description('create and push branch')
   .action(createBranchRemote);
 
+const sshAdd = require('./commands/ssh-add');
+jkcommander
+  .command('sshAdd')
+  .description('Add ssh-key to current shell')
+  .action(sshAdd);
+
 const dummyScript = require('./commands/dummy-script');
 jkcommander
   .command('dummyScript')
